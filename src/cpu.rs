@@ -42,13 +42,11 @@ impl CPU {
     return c;
   }
 
-  #[cfg(debug_assertions)]
   #[allow(dead_code)]
   pub fn internal_debug(&self) {
     println!("{:?}", self);
   }
 
-  #[cfg(debug_assertions)]
   #[allow(dead_code)]
   pub fn debug(&mut self) {
     for name in self.register_names.iter() {
@@ -57,7 +55,6 @@ impl CPU {
     println!();
   }
 
-  #[cfg(debug_assertions)]
   #[allow(dead_code)]
   pub fn view_memory_at(&mut self, address: usize, n: Option<usize>) {
     let mut next_n_bytes = String::from(format!("0x{:0>4X}:", address));
