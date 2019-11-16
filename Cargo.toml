@@ -1,0 +1,5 @@
+[package]
+name = "lang"
+version = "0.1.0"
+authors = ["Connor Love <connor@dotconnor.com>"]
+edition = "2018"
